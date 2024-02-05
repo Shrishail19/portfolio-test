@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <!--Header-->
+    <header class="header">
+      <div class="logo">
+        <p>Portfolio</p>
+      </div>
+
+      <nav class="nav">
+        <ul class="nav-links">
+          <li> <a class="nav-link" href="#home">Home</a> </li>
+          <li> <a class="nav-link" href="#skills">Skills</a></li>
+          <li> <a class="nav-link" href="#academics">Academics</a></li>
+          <li> <a class="nav-link" href="#contact">Contact</a></li>
+          <li> <a class="nav-link" href="#projects">Projects</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--banner-->
+    <section class="banner" id="home">
+      <div class="details">
+        <p class="t1">I am,</p>
+        <p class="t2">Shrishail</p>
+        <p class="desc">Full-Stack Developer.</p>
+        <form action="#contact">
+          <button class="cta">Contact Me</button>
+        </form>
+      </div>
+
+      <div class="Person">
+        <img class="Person-img" src="ShrishailDp.jpg" alt="ShrishailDp" />
+      </div>
+    </section>
+
+    <!--skills-->
+    <section class="skills" id="skills">
+      <h1 class="section-title">Things I Can Do</h1>
+      <div class="section-child">
+        <!--skill-1-->
+        <div class="skill">
+          <i class="fa-solid fa-laptop icon"></i>
+          <h2>Front-end Development</h2>
+          <p>HTML | CSS | JavaScript</p>
+          <p class="skill-text">
+            I'm passionate about creating beautiful and functional web applications using HTML, CSS, JavaScript, with VSCode editor.
+
+          </p>
+          <button class="skill-btn" onclick="showDetails('frontend')">View More</button>
+        </div>
+        <!--skill-2-->
+        <div class="skill">
+          <i class="fa-brands fa-java icon"></i>
+          <h2>Back-end Development</h2>
+          <p>JSE | JEE | Spring Framework</p>
+          <p class="skill-text">
+            I'm passionate about creating scalable and secure web applications using JSE, JEE, Spring Framework, and RestAPIs.
+          </p>
+          <button class="skill-btn" onclick="showDetails('backend')" >View More</button>
+        </div>
+        <!--skill-3-->
+        <div class="skill">
+          <i class="fa-solid fa-database icon"></i>
+          <h2>Database Management</h2>
+          <p>MySQL | Oracle SQL</p>
+          <p class="skill-text">
+            As a database developer I'm passionate about creating efficient and reliable databases using MySQL and 
+            Oracle SQL.
+
+          </p>
+          <button class="skill-btn" onclick="showDetails('database')" >View More</button>
+        </div>
+        <!--skill-4-->
+        <div class="skill">
+          <i class="fa-brands fa-react icon"></i>
+          <h2>Front-end Development Libraries</h2>
+          <p>React | React-Redux</p>
+          <p class="skill-text">
+            AS a frontend developer I'm passionate about creating dynamic and responsive web applications using React and Redux.
+          </p>
+          <button class="skill-btn" onclick="showDetails('react')" >View More</button>
+        </div>
+      </div>
+      <!--skill-1 detailes -->
+      <div id="frontendDetails" class="skill-details">
+        <pre class="skill-details-child">
+          I have completed few projects as a front-end developer, ranging
+          from simple landing pages to complex web applications. You can check 
+          out some of my work below. I'm always eager to learn new technologies 
+          and improve my skills. Some of the technologies I'm currently learning are 
+          front-end libraries.
+          
+          I'm looking for new opportunities to work on exciting and challenging projects
+          with a great team. If you are interested in working with me, please feel free
+          to contact me via <a href="mailto:shrishaildengi94@gmail.com"><strong>Email</strong></a> or <a href="tel:+917022963210"><strong>Call</strong></a>.You can also find me on <a href="https://www.linkedin.com/in/shrishail-d-s19/" target="_blank"><strong>Linkedin</strong></a>.
+          
+          <strong>Thank you</strong> for visiting my portfolio website. I hope you enjoy it and have a <strong>great day!</strong>
+        </pre>
+        <button class="cta skill-details-btn" onclick="hideDetails('frontend')">Close</button>
+      </div>
+      <!--skill-2 detailes -->
+      <div id="backendDetails" class="skill-details">
+        <pre class="skill-details-child">
+          I have completed few projects as a Java developer, ranging from simple CRUD
+          applications to complex. You can check out some of my work below. I'm
+          always eager to learn new technologies and improve my skills. Some of the
+          technologies I'm currently learning are frameworks.
+
+          I'm looking for new opportunities to work on exciting and challenging projects
+          with a great team. If you are interested in working with me, please feel free
+          to contact me via <a href="mailto:shrishaildengi94@gmail.com"><strong>Email</strong></a> or <a href="tel:+917022963210"><strong>Call</strong></a>.You can also find me on <a href="https://www.linkedin.com/in/shrishail-d-s19/" target="_blank"><strong>Linkedin</strong></a>.
+          
+          <strong>Thank you</strong> for visiting my portfolio website. I hope you enjoy it and have a <strong>great day!</strong>
+        </pre>
+        <button class="cta skill-details-btn" onclick="hideDetails('backend')">Close</button>
+      </div>
+       <!--skill-3 detailes -->
+       <div id="databaseDetails" class="skill-details">
+        <pre class="skill-details-child">
+          I have completed few projects as a SQL developer, ranging from simple data
+          analysis to complex data warehousing. You can check out some of my work 
+          below. I'm always eager to learn new technologies and improve my skills. 
+          Some of the technologies I'm currently learning are NoSQL.
+
+          I'm looking for new opportunities to work on exciting and challenging projects
+          with a great team. If you are interested in working with me, please feel free
+          to contact me via <a href="mailto:shrishaildengi94@gmail.com"><strong>Email</strong></a> or <a href="tel:+917022963210"><strong>Call</strong></a>.You can also find me on <a href="https://www.linkedin.com/in/shrishail-d-s19/" target="_blank"><strong>Linkedin</strong></a>.
+          
+          <strong>Thank you</strong> for visiting my portfolio website. I hope you enjoy it and have a <strong>great day!</strong>
+        </pre>
+        <button class="cta skill-details-btn" onclick="hideDetails('database')">Close</button>
+      </div>
+       <!--skill-4 detailes -->
+       <div id="reactDetails" class="skill-details">
+        <pre class="skill-details-child">
+          I have completed few projects as a React developer, ranging from simple
+          to-do lists to complex e-commerce platforms. You can check out some of
+          my work below. I have used Formik to handle form validation and submission
+          in some of my projects. I have also used VSCode as my preferred code
+          editor, along with various extensions and tools to enhance my productivity 
+          and code quality.
+          
+          I'm always eager to learn new technologies and improve my skills. 
+          Some of the technologies I'm currently learning are Redux.
+
+          I'm looking for new opportunities to work on exciting and challenging projects
+          with a great team. If you are interested in working with me, please feel free
+          to contact me via <a href="mailto:shrishaildengi94@gmail.com"><strong>Email</strong></a> or <a href="tel:+917022963210"><strong>Call</strong></a>.You can also find me on <a href="https://www.linkedin.com/in/shrishail-d-s19/" target="_blank"><strong>Linkedin</strong></a>.
+          
+          <strong>Thank you</strong> for visiting my portfolio website. I hope you enjoy it and have a <strong>great day!</strong>
+        </pre>
+        <button class="cta skill-details-btn" onclick="hideDetails('react')">Close</button>
+      </div>
+    </section>
+    <!--academics-->
+    <section class="academics" id="academics">
+      <h1 class="section-title">Academics</h1>
+      <div class="section-child academic-section-child">
+        <!--academic-1-->
+        <div class="academic">
+          <p class="tag"><strong>CLASS 10</strong> / KSEEB</p>
+          <p class="number">56.64</p>
+          <p class="tag">Percentage</p>
+        </div>
+        <!--academic-2-->
+        <div class="academic">
+          <p class="tag"><strong>Diploma</strong> in Electronics & Communication</p>
+          <p class="number">71.12</p>
+          <p class="tag">Percentage</p>
+        </div>
+        <!--academic-3-->
+        <div class="academic">
+          <p class="tag"><strong>BE</strong> in Electronics & Communication</p>
+          <p class="number">7.42</p>
+          <p class="tag">CGPA</p>
+        </div>
+      </div>
+    </section>
+    <!--contact section-->
+    <section class="contact" id="contact">
+      <div class="overlay">
+          <h1 class="section-title contact-section-title">Get In Touch</h1>
+        <form action="https://api.web3forms.com/submit" method="post" class="contact-area">
+          <input type="hidden" name="access_key" value="85261f98-3ae9-4b7e-ad8f-5887409df4b5">
+          <input type="text" name="name" class="inp-text" placeholder="Name" required/>
+          <input type="email" name="email" class="inp-text" placeholder="Email" required/>
+          <textarea class="inp-text area" name="message" placeholder="Message" required></textarea>
+          <button class="cta submit-btn">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h1 class="section-title">Some of my Projects</h1>
+      <div class="section-child project-section-child">
+        <img
+          class="project-img"
+          src="https://th.bing.com/th/id/R.f5be851d949b22cb7a61bbf46d005bd6?rik=sV14AmU8a8S9KA&riu=http%3a%2f%2fclipartmag.com%2fimages%2fanimal-hospital-clipart-16.png&ehk=AVoU4nuV2FhHbi9OIYkl%2bN2fALc8npRzCzoNtAGmv88%3d&risl=&pid=ImgRaw&r=0"
+          alt="project"
+          title="Animal Health Monitoring System Using Arduino and IoT"
+        />
+        <img
+          class="project-img"
+          src="https://cdn-icons-png.flaticon.com/512/10848/10848825.png"
+          alt="project"
+          title="Stockport-Predictive Sentiment Analysis"
+        />
+        <img
+          class="project-img"
+          src="https://www.pngmart.com/files/7/Portfolio-Transparent-PNG.png"
+          alt="project"
+          title="My Portfolio"
+        />
+        <img
+          class="project-img"
+          src="https://cdn3d.iconscout.com/3d/premium/thumb/music-notes-5508731-4596468.png"
+          alt="project"
+          title="TuneHub Music Player"
+        />
+      </div>
+    </section>
+    <!--footer-->
+    <footer class="footer">
+      <div class="section-child footer-section-child ">
+        <!-- footer-child-1 -->
+        <div class="footer-child">
+          <h3>Quick Links</h3>
+          <ul class="footer-list">
+            <li> <a class="nav-link Q-link" href="#home">Home</a></li>
+            <li> <a class="nav-link Q-link" href="#skills">Skills</a></li>
+            <li> <a class="nav-link Q-link" href="#academics">Academics</a></li>
+            <li> <a class="nav-link Q-link" href="#contact">Contact</a></li>
+            </ul>
+            <ul class="footer-list f-icons">
+              <li><a class="nav-link Q-link" href="https://www.linkedin.com/in/shrishail-d-s19/" target="_blank" ><i class="fa-brands fa-linkedin-in f-icon"></i></a></li>
+              <li> <a class="nav-link Q-link" href="https://github.com/Shrishail19" target="_blank"><i class="fa-brands fa-github f-icon"></i></a></li>
+            </ul>
+        </div>
+        <!-- footer-child-2 -->
+        <div class="footer-child">
+          <h3>Contact</h3>
+          <ul class="footer-list">
+            <li>Kalaburagi, Karnataka, India 585228</li>
+            <li>+91 7022963210</li>
+            <li>shrishaildengi94@gmail.com</li>
+          </ul>
+        </div>
+        <!-- footer-child-3 -->
+        <div class="footer-child map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d258585.25174687887!2d76.79293812717853!3d17.251183547724178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc8c7455b824e57%3A0x44cbe3366957ed9f!2sKalaburagi%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1707019542956!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+      </div>
+      <p class="copyright" >Copyright &#169 2023-2024 Shrishail</p>
+    </footer>
+  </body>
+</html>
